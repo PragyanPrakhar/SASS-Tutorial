@@ -1,0 +1,45 @@
+.button, header button {
+  color: white;
+  background-color: pink;
+  border: 2px solid black;
+  padding: 10px 20px;
+}
+
+body {
+  background-color: yellow;
+}
+
+h1 {
+  color: white;
+  font-size: 16px;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header h2 {
+  font-family: poppins;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+header nav a:hover {
+  background-color: darkgray;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 16px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

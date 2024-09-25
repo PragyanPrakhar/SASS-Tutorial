@@ -1,0 +1,51 @@
+// Variables
+//nesting
+//operators
+//maps
+//$
+//mixin
+//Extend
+//Partials(we use _ before scss file)
+@import "_common";
+body
+    {
+        background-color: $var-bg;
+    }
+
+h1
+    {
+        color: $var-txt;
+        font-size:map-get($map:$font-size,$key:"mobile")
+
+    }
+
+header{
+    background-color:black;
+    @include  flexbox(row,space-evenly,center);
+        h2{
+            font-family: poppins;
+        }
+            nav{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 20px;
+                    &:hover{
+                        background-color:darkgray;
+                        }
+                }       
+            }
+            button{
+               @extend.button  
+            }
+    }
+@media screen and (max-width:900px)
+    {
+        h1
+            {
+                font-size: map-get($map:$font-size,$key:"mobile");
+            }
+        header{
+            @include flexbox(column,space-evenly ,center )
+    }
+}

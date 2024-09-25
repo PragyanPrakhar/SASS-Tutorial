@@ -1,0 +1,19 @@
+.button{
+    color: white;
+    background-color:pink;
+    border: 2px solid black;
+    padding: 10px 20px;    
+}
+$var-bg: yellow;
+$var-txt: white;
+$var-fnt-lg: 50px;
+$var-fnt-sm: 30px + 2px;
+
+$font-size:("mobile":16px,"tablet":25px,"desktop":32px);
+
+@mixin flexbox($fd,$jc,$ai){
+    display: flex;
+    flex-direction:$fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
